@@ -1,0 +1,18 @@
+{
+  "$schema": "https://q64.dev/schema/qube.json5",
+  "name": "q64/webmcp-client",
+  "version": "0.1.0",
+  "license": "MIT OR Apache-2.0",
+  "description": "A client for WebMCP (the Web Model Context Protocol) tool registry.",
+  "type": "library",
+  "entry": "src/lib.q",
+  "keywords": ["webmcp", "mcp", "agent", "tools", "browser"],
+
+  // The client reaches the browser's tool registry (navigator.modelContext),
+  // a host capability. @ui is the closest existing marker; a dedicated @mcp
+  // effect is deferred. See README.
+  "effects": {
+    "declared": ["@ui"],
+  },
+  "capabilities": ["Ui"],
+}
