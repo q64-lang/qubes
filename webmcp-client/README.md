@@ -39,8 +39,8 @@ let tools = try mcp.list_tools()
 let result = try call(mcp, "echo", r#"{"text":"hi"}"#)
 ```
 
-See [`examples/tool-caller`](./examples/tool-caller) for a runnable shape
-that supplies an in-process fit with canned tools.
+See [`example/`](./example) for a runnable shape that supplies an in-process
+fit with canned tools.
 
 ## Design notes
 

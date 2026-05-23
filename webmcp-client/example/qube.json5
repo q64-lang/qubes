@@ -5,14 +5,14 @@
   "license": "MIT OR Apache-2.0",
   "description": "Lists and invokes WebMCP tools using q64/webmcp-client.",
   "type": "application",
-  "entry": "src/main.q",
+  "entry": "main.q",
 
   // Local-path dependency on the qube this example lives under. The qube CLI
   // normalises this to an absolute path and links it via
   // `q64 --module q64.webmcp_client=<path>/src`, exactly the way a
   // registry-resolved dependency is linked (spec/qube-cli.md).
   "dependencies": {
-    "q64/webmcp-client": { "path": "../.." },
+    "q64/webmcp-client": { "path": ".." },
   },
 
   "targets": {

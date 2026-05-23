@@ -12,7 +12,7 @@
   "workspace": {
     "members": [
       "webmcp-client",
-      "webmcp-client/examples/tool-caller",
+      "webmcp-client/example",
     ],
   },
 }

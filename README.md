@@ -8,8 +8,8 @@ publish, depend on, and import; see the
 This repo is a **qube workspace**: the top-level [`qube.json5`](./qube.json5)
 declares each qube as a member, the same shape q64's `stdlib/` uses. `qube build`
 from the root builds every member in dependency order; from a member folder it
-builds just that qube. Each qube is a top-level directory; its examples live
-under it (`<qube>/examples/<name>`). New members are added with a line in the
+builds just that qube. Each qube is a top-level directory; its example lives
+under it (`<qube>/example`). New members are added with a line in the
 workspace `members` list.
 
 > **Status: pre-alpha.** The q64 toolchain is early; these qubes are real
@@ -21,9 +21,9 @@ workspace `members` list.
 |------|------|---------|
 | [`webmcp-client/`](./webmcp-client) | library (`q64/webmcp-client`) | A client for [WebMCP](https://github.com/webmachinelearning/webmcp) — enumerate and invoke the tools a web page registers on `navigator.modelContext`. |
 
-Each qube documents its own examples; e.g.
-[`webmcp-client/examples/tool-caller/`](./webmcp-client/examples/tool-caller)
-depends on `q64/webmcp-client` via a local path and drives its client surface,
+Each qube documents its own example; e.g.
+[`webmcp-client/example/`](./webmcp-client/example) depends on
+`q64/webmcp-client` via a local path and drives its client surface,
 demonstrating how a dependency links into a project.
 
 ## License
