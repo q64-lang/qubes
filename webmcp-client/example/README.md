@@ -1,19 +1,19 @@
 # tool-caller — example
 
 An application qube, living under the qube it demonstrates, that depends on
-[`q64/webmcp-client`](..) and drives its `WebMcp` client surface: it lists the
+[`dev.q64.webmcp_client`](..) and drives its `WebMcp` client surface: it lists the
 tools a page exposes and invokes one, printing the results.
 
 The dependency is declared as a **local path** in `qube.json5`:
 
 ```json5
 "dependencies": {
-  "q64/webmcp-client": { "path": ".." },
+  "dev.q64.webmcp_client": { "path": ".." },
 }
 ```
 
 The qube CLI normalises that path to an absolute one and links it via
-`q64 --module q64.webmcp_client=<path>/src` — the same mechanism a
+`q64 --module dev.q64.webmcp_client=<path>/src` — the same mechanism a
 registry-resolved dependency uses (see
 [`q64/spec/qube-cli.md`](https://github.com/q64-lang/q64/blob/main/spec/qube-cli.md)).
 

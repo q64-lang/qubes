@@ -1,4 +1,4 @@
-//! tool-caller — depends on q64/webmcp-client and drives the WebMcp client.
+//! dev.q64.tool_caller — depends on dev.q64.webmcp_client and drives the WebMcp client.
 //!
 //! WebMCP (navigator.modelContext) is browser-only and currently ships behind
 //! a flag in Chrome Canary. Until the browser runtime adapter supplies a real
@@ -11,7 +11,7 @@
 //!
 //!   qube web        # serves at http://localhost:4711/
 
-import q64.webmcp_client.{WebMcp, Tool, ToolResult, McpError, find_tool}
+import dev.q64.webmcp_client.{WebMcp, Tool, ToolResult, McpError, find_tool}
 
 /// An in-process WebMcp standing in for a real page until the browser adapter
 /// bridges navigator.modelContext.

@@ -1,4 +1,4 @@
-//! q64.webmcp_client.client — the WebMcp capability and client helpers.
+//! dev.q64.webmcp_client.client — the WebMcp capability and client helpers.
 //! exports: WebMcp, find_tool, call
 //!
 //! `WebMcp` is the low-level capability a host adapter supplies: the browser

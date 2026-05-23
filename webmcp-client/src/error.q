@@ -1,4 +1,4 @@
-//! q64.webmcp_client.error — the client error type.
+//! dev.q64.webmcp_client.error — the client error type.
 //! exports: McpError
 
 /// Why a WebMCP client operation failed.

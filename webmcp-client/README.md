@@ -1,4 +1,4 @@
-# q64/webmcp-client
+# dev.q64.webmcp_client
 
 A q64 client for **WebMCP** — the [Web Model Context
 Protocol](https://github.com/webmachinelearning/webmcp), a W3C Web Machine
@@ -14,7 +14,7 @@ qube is the *client* (agent) side: it enumerates a page's tools and calls them.
 ## Surface
 
 ```q64
-import q64.webmcp_client.{WebMcp, Tool, ToolResult, McpError, find_tool, call}
+import dev.q64.webmcp_client.{WebMcp, Tool, ToolResult, McpError, find_tool, call}
 ```
 
 - `face WebMcp` — the capability a host adapter supplies:
@@ -42,7 +42,7 @@ let result = try call(mcp, "echo", r#"{"text":"hi"}"#)
 See [`example/`](./example) for a runnable shape that supplies an in-process
 fit with canned tools. The `example/` tree is part of the published qube (the
 default archive file set ships `examples/` / `example/`), so anyone installing
-`q64/webmcp-client` — human or coding agent — gets the usage sample alongside
+`dev.q64.webmcp_client` — human or coding agent — gets the usage sample alongside
 the source.
 
 ## Design notes

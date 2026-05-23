@@ -1,4 +1,4 @@
-//! q64.webmcp_client.tool — WebMCP protocol value types.
+//! dev.q64.webmcp_client.tool — WebMCP protocol value types.
 //! exports: Tool, ToolResult
 //!
 //! A WebMCP page (the "server") registers tools on navigator.modelContext;

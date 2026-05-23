@@ -1,6 +1,6 @@
 {
   "$schema": "https://q64.dev/schema/qube.json5",
-  "name": "q64/webmcp-client",
+  "name": "dev.q64.webmcp_client",
   "version": "0.1.0",
   "license": "MIT OR Apache-2.0",
   "description": "A client for WebMCP (the Web Model Context Protocol) tool registry.",

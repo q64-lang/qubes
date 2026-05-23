@@ -19,11 +19,11 @@ workspace `members` list.
 
 | Qube | Kind | Purpose |
 |------|------|---------|
-| [`webmcp-client/`](./webmcp-client) | library (`q64/webmcp-client`) | A client for [WebMCP](https://github.com/webmachinelearning/webmcp) — enumerate and invoke the tools a web page registers on `navigator.modelContext`. |
+| [`webmcp-client/`](./webmcp-client) | library (`dev.q64.webmcp_client`) | A client for [WebMCP](https://github.com/webmachinelearning/webmcp) — enumerate and invoke the tools a web page registers on `navigator.modelContext`. |
 
 Each qube documents its own example; e.g.
 [`webmcp-client/example/`](./webmcp-client/example) depends on
-`q64/webmcp-client` via a local path and drives its client surface,
+`dev.q64.webmcp_client` via a local path and drives its client surface,
 demonstrating how a dependency links into a project.
 
 ## License

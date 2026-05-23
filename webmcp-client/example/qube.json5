@@ -1,18 +1,18 @@
 {
   "$schema": "https://q64.dev/schema/qube.json5",
-  "name": "tool-caller",
+  "name": "dev.q64.tool_caller",
   "version": "0.0.0",
   "license": "MIT OR Apache-2.0",
-  "description": "Lists and invokes WebMCP tools using q64/webmcp-client.",
+  "description": "Lists and invokes WebMCP tools using dev.q64.webmcp_client.",
   "type": "application",
   "entry": "main.q",
 
   // Local-path dependency on the qube this example lives under. The qube CLI
   // normalises this to an absolute path and links it via
-  // `q64 --module q64.webmcp_client=<path>/src`, exactly the way a
+  // `q64 --module dev.q64.webmcp_client=<path>/src`, exactly the way a
   // registry-resolved dependency is linked (spec/qube-cli.md).
   "dependencies": {
-    "q64/webmcp-client": { "path": ".." },
+    "dev.q64.webmcp_client": { "path": ".." },
   },
 
   "targets": {
