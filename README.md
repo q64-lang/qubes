@@ -1,8 +1,15 @@
 # qubes
 
-First-party [q64](https://github.com/q64-lang/q64) qubes — distribution units
-published to the continuum registry. (A *qube* is what you publish, depend on,
-and import; see the [q64 vocabulary](https://github.com/q64-lang/q64#vocabulary).)
+A monorepo of first-party [q64](https://github.com/q64-lang/q64) qubes —
+distribution units published to the continuum registry. (A *qube* is what you
+publish, depend on, and import; see the
+[q64 vocabulary](https://github.com/q64-lang/q64#vocabulary).)
+
+This repo is a **qube workspace**: the top-level [`qube.json5`](./qube.json5)
+declares each qube as a member, the same shape q64's `stdlib/` uses. `qube build`
+from the root builds every member in dependency order; from a member folder it
+builds just that qube. New qubes are added as a top-level directory (libraries)
+or under [`examples/`](./examples), plus a line in the workspace `members` list.
 
 > **Status: pre-alpha.** The q64 toolchain is early; these qubes are real
 > source that compiles once the compiler and registry are capable enough.

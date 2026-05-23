@@ -1,0 +1,18 @@
+{
+  "$schema": "https://q64.dev/schema/qube.json5",
+  "name": "qubes",
+  "version": "0.0.0",
+  "license": "MIT OR Apache-2.0",
+  "description": "A monorepo of first-party q64 qubes.",
+  "type": "workspace",
+
+  // One entry per qube. `qube build` from here builds every member in
+  // dependency order; from any member folder it builds just that qube.
+  // Add a line as each new qube lands.
+  "workspace": {
+    "members": [
+      "webmcp-client",
+      "examples/tool-caller",
+    ],
+  },
+}
