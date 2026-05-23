@@ -1,14 +1,14 @@
 # tool-caller
 
-An application qube that depends on [`q64/webmcp-client`](../../webmcp-client)
-and drives its `WebMcp` client surface: it lists the tools a page exposes and
-invokes one, printing the results.
+An application qube, living under the qube it demonstrates, that depends on
+[`q64/webmcp-client`](../..) and drives its `WebMcp` client surface: it lists
+the tools a page exposes and invokes one, printing the results.
 
 The dependency is declared as a **local path** in `qube.json5`:
 
 ```json5
 "dependencies": {
-  "q64/webmcp-client": { "path": "../../webmcp-client" },
+  "q64/webmcp-client": { "path": "../.." },
 }
 ```
 

@@ -7,11 +7,12 @@
   "type": "application",
   "entry": "src/main.q",
 
-  // Local-path dependency: the qube CLI normalises this to an absolute path
-  // and links it via `q64 --module q64.webmcp_client=<path>/src`, exactly the
-  // way a registry-resolved dependency is linked (spec/qube-cli.md).
+  // Local-path dependency on the qube this example lives under. The qube CLI
+  // normalises this to an absolute path and links it via
+  // `q64 --module q64.webmcp_client=<path>/src`, exactly the way a
+  // registry-resolved dependency is linked (spec/qube-cli.md).
   "dependencies": {
-    "q64/webmcp-client": { "path": "../../webmcp-client" },
+    "q64/webmcp-client": { "path": "../.." },
   },
 
   "targets": {
