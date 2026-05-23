@@ -7,6 +7,8 @@
   "type": "library",
   "entry": "src/lib.q",
   "keywords": ["webmcp", "mcp", "agent", "tools", "browser"],
+  "categories": ["agents", "ai", "web"],
+
 
   // The client reaches the browser's tool registry (navigator.modelContext),
   // a host capability. @ui is the closest existing marker; a dedicated @mcp
