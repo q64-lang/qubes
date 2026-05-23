@@ -40,7 +40,10 @@ let result = try call(mcp, "echo", r#"{"text":"hi"}"#)
 ```
 
 See [`example/`](./example) for a runnable shape that supplies an in-process
-fit with canned tools.
+fit with canned tools. The `example/` tree is part of the published qube (the
+default tarball file set ships `examples/` / `example/`), so anyone installing
+`q64/webmcp-client` — human or coding agent — gets the usage sample alongside
+the source.
 
 ## Design notes
 
