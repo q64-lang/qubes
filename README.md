@@ -15,6 +15,13 @@ workspace `members` list.
 > **Status: pre-alpha.** The q64 toolchain is early; these qubes are real
 > source that compiles once the compiler and registry are capable enough.
 
+> **Address space.** Qubes here are distributed as **source**; the address
+> space (`wasm32` / `wasm64`) is chosen at *build* time, not stored in the
+> registry. There is no default — a build picks one explicitly (per
+> q64's [`spec/memory.md`](https://github.com/q64-lang/q64/blob/main/spec/memory.md)).
+> `wasm32` is the universal/WebKit-and-iPad baseline; `wasm64` adds Memory64
+> for capable hosts. A qube meant to run in the browser must build `wasm32`.
+
 ## Qubes
 
 | Qube | Kind | Purpose |
